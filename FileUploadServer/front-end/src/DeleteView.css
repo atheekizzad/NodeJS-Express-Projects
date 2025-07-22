@@ -1,0 +1,61 @@
+/* DeleteView.css */
+
+div {
+  max-width: 500px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: #fefefe;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  flex-grow: 1;
+  margin-right: 15px;
+  word-break: break-all;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  background-color: #dc3545;
+  border: none;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #b02a37;
+}
+
+h2 {
+  text-align: center;
+  color: #666;
+  margin-top: 30px;
+}
+
+h3 {
+  text-align: center;
+  color: #28a745;
+  margin-top: 20px;
+  font-weight: bold;
+}

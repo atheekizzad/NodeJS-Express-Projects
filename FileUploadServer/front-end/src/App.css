@@ -1,0 +1,56 @@
+/* App.css */
+
+.App {
+  max-width: 450px;
+  margin: 40px auto;
+  padding: 20px 30px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  background-color: #fafafa;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+input[type="file"] {
+  display: block;
+  margin: 0 auto 15px;
+  cursor: pointer;
+}
+
+button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px 22px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+h2 + h2 {
+  margin-top: 15px;
+  color: #28a745;
+  font-weight: 600;
+}
+
+/* Optional: Style for error messages if you want */
+/* .error {
+  color: #d9534f;
+  font-weight: 600;
+} */
