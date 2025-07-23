@@ -1,0 +1,118 @@
+/* App.css */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+.App {
+  max-width: 420px;
+  margin: 3rem auto;
+  background: white;
+  padding: 2rem 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 30px;
+}
+button.reset-btn {
+  margin-left: 1rem; /* or any spacing you want */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+label {
+  font-weight: 600;
+  font-size: 1rem;
+  text-align: left;
+  color: #222;
+}
+
+input[type="number"] {
+  padding: 0.65rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+
+}
+
+input[type="number"]:focus {
+  outline: none;
+  border-color: #4a90e2;
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+}
+
+/* Hide default number input arrows in Firefox */
+input[type=number]::-moz-inner-spin-button, 
+input[type=number]::-moz-outer-spin-button { 
+  -moz-appearance: none;
+  margin: 0; 
+}
+
+/* Hide default number input arrows in Chrome, Safari, Edge */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+  margin: 0; 
+}
+
+button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.2rem;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #357abd;
+}
+
+h3 {
+  font-weight: 600;
+  color: #e74c3c; /* red for messages, can change for success */
+  margin-bottom: 1.5rem;
+}
+
+img {
+  max-width: 200px;
+  max-height: 200px;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #4a90e2;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  border: 2px solid #4a90e2;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+}
+
+a:hover {
+  background-color: #4a90e2;
+  color: white;
+}
