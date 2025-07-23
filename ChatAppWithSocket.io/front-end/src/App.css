@@ -1,0 +1,121 @@
+/* App.css */
+
+.App {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+form input[type="text"] {
+  flex: 1;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  border: 1.5px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0,123,255,0.5);
+}
+
+form button {
+  padding: 0 1.2rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+.typing-indicator {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 0.5rem;
+  padding-left: 0.25rem;
+}
+
+.chat-container {
+  max-height: 400px;
+  overflow-y: auto;
+  border-top: 1px solid #ddd;
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.message {
+  max-width: 70%;
+  padding: 0.6rem 1rem;
+  border-radius: 12px;
+  position: relative;
+  word-wrap: break-word;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.sent {
+  background-color: #dcf8c6;
+  align-self: flex-end;
+  text-align: right;
+  border-bottom-right-radius: 0;
+}
+
+.received {
+  background-color: #fff;
+  align-self: flex-start;
+  border: 1px solid #ccc;
+  border-bottom-left-radius: 0;
+}
+
+.sender {
+  font-weight: 700;
+  font-size: 0.85rem;
+  margin-bottom: 0.3rem;
+  color: #555;
+}
+
+.content {
+  font-size: 1rem;
+  color: #333;
+}
+
+.time {
+  font-size: 0.7rem;
+  color: #888;
+  margin-top: 0.3rem;
+}
+
+@media (max-width: 600px) {
+  .App {
+    margin: 1rem;
+    padding: 1rem;
+  }
+  .message {
+    max-width: 90%;
+  }
+}
